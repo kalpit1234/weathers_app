@@ -4,7 +4,7 @@ let para=document.querySelector(".para")
 let visibility=document.querySelector(".v")
 let description=document.querySelector(".p")
 async function wa(city){
-    let apis = `http://api.openweathermap.org/data/2.5/weather?q=${city}&APPID=9893d530f6a80322093c3efc3530c99b`;
+    let apis = `https://api.openweathermap.org/data/2.5/weather?q=${city}&APPID=9893d530f6a80322093c3efc3530c99b`;
     let res=await fetch(apis)
     let respond=await res.json()
     console.log(respond)
